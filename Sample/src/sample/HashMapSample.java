@@ -1,8 +1,6 @@
 package sample;
 
-import java.nio.channels.MembershipKey;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.Map;
 
 
@@ -45,15 +43,17 @@ public class HashMapSample {
                     System.out.println("keySetキー: " + key + ",値: " + members.get(key));
                 }
                 
+                
+                //拡張forループによる取得:values
+                for(String value : members.values()) {
+                    System.out.println("values 値: " + value);
+                }
+                
                 //サイズの取得
                 int size = members.size(); //Mapのサイズを取得
                 System.out.println("Mapのサイズ(クリア前) : " + size);
                 members.clear();// Mapの内容をクリア
                 System.out.println("Mapのサイズ(クリア後) : " + members.size());
-                
-                
-                
-                
                 
                 
                 
